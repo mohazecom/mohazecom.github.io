@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohazecom Ltd | Electronics Kenya</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohazecom Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f0f4f8;
+      background-color: #f4f6f8;
       color: #333;
     }
+
     header {
       background: linear-gradient(to right, #1d3557, #457b9d);
       color: white;
+      padding: 1.5rem 2rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1606813902784-02881a6c7e4e?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
-      color: white;
+      background-color: #bbb;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 6rem 1rem;
-      position: relative;
+      color: white;
     }
-    .hero::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
+
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 3rem 1rem;
+
+    .categories {
+      padding: 2rem;
       text-align: center;
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .categories h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #1d3557;
+    }
+
+    .category-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
-      max-width: 1200px;
-      margin: 2rem auto;
     }
+
     .card {
-      background: white;
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      transition: transform 0.3s;
+      width: 250px;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
+
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-    .card h3 {
+
+    .card a {
+      display: block;
       padding: 1rem;
-      margin: 0;
-    }
-    .cta {
-      background: #1d3557;
-      color: white;
-      padding: 2rem 1rem;
-    }
-    .cta h2 {
-      margin-bottom: 1rem;
-    }
-    .cta a {
-      background: #e63946;
-      color: white;
-      padding: 0.75rem 1.5rem;
       text-decoration: none;
-      border-radius: 5px;
+      color: #1d3557;
       font-weight: bold;
     }
+
     footer {
-      background: #333;
+      background-color: #1d3557;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -112,45 +108,37 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="phones.html">Phones</a>
-      <a href="tvs.html">TVs</a>
-      <a href="accessories.html">Accessories</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">TVs</a>
+      <a href="#">Accessories</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>Best Deals on Electronics in Kenya</h1>
-      <p>Shop smartphones, TVs, accessories and more – fast delivery, great prices.</p>
-    </div>
+    <h1>Best Deals on Electronics in Kenya</h1>
+    <p>Shop smartphones, TVs, accessories and more – fast delivery, great prices.</p>
   </section>
 
-  <section class="section">
+  <section class="categories">
     <h2>Our Categories</h2>
-    <div class="cards">
+    <div class="category-cards">
       <div class="card">
-        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg" alt="Phones">
-        <h3><a href="phones.html">View Phones</a></h3>
+        <img src="https://images.unsplash.com/photo-1660664602847-0a5191b21f9e?auto=format&fit=crop&w=800&q=80" alt="Phones" />
+        <a href="phones.html">View Phones</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1606817905312-33b50e86533e?auto=format&fit=crop&w=800&q=80" alt="TVs">
-        <h3><a href="tvs.html">View Televisions</a></h3>
+        <img src="https://images.unsplash.com/photo-1606813902773-cfdcd3f4369e?auto=format&fit=crop&w=800&q=80" alt="TVs" />
+        <a href="#">View Televisions</a>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1578760651087-4e0b2f636f03?auto=format&fit=crop&w=800&q=80" alt="Accessories">
-        <h3><a href="accessories.html">View Accessories</a></h3>
+        <img src="https://images.unsplash.com/photo-1580910051073-df066faae6da?auto=format&fit=crop&w=800&q=80" alt="Accessories" />
+        <a href="#">View Accessories</a>
       </div>
     </div>
-  </section>
-
-  <section class="cta">
-    <h2>Need help or want to order?</h2>
-    <a href="https://wa.me/254733563817">Chat with Us on WhatsApp</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mohazecom Ltd | All Rights Reserved</p>
-    <p>Email: mohazecomltd@gmail.com | Tel: +254 733 563 817</p>
+    <p>&copy; 2025 Mohazecom Ltd. All rights reserved.</p>
   </footer>
 </body>
 </html>
