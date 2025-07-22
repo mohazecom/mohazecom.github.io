@@ -5,45 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohazecom Ltd</title>
   <style>
+    :root {
+      --main-bg: #ffffff;
+      --main-text: #333;
+      --accent: #1d3557;
+      --light-accent: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: var(--main-bg);
+      color: var(--main-text);
     }
+
     header, footer {
-      background-color: #1d3557;
+      background-color: var(--accent);
       color: white;
+      padding: 1rem 2rem;
       text-align: center;
-      padding: 1rem;
     }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: 500;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .container {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
     h2 {
-      color: #1d3557;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--light-accent);
+      padding-bottom: 0.5rem;
     }
+
     .product {
       background-color: white;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
       padding: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
     }
+
     .product img {
-      max-width: 100%;
-      height: auto;
+      max-width: 150px;
+      border-radius: 8px;
     }
+
+    .product-details {
+      flex: 1;
+    }
+
     ul {
-      padding-left: 1.2rem;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 0.3rem 0;
+    }
+
+    a.contact-link {
+      display: inline-block;
+      background-color: white;
+      color: var(--accent);
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    a.contact-link:hover {
+      background-color: var(--light-accent);
     }
   </style>
 </head>
@@ -65,13 +128,28 @@
   <div class="container">
     <section id="home">
       <h2>Welcome to Mohazecom Ltd</h2>
-      <p>Your trusted source for electronics across Kenya — phones, TVs, and accessories at great prices.</p>
+      <p>Your trusted source for electronics across Kenya — phones, TVs, and accessories at great prices. Fast delivery, quality products, and friendly service.</p>
     </section>
 
     <section id="phones">
       <h2>Phones</h2>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg" alt="iPhone 14 Pro Max">
+        <div class="product-details">
+          <h3>iPhone 14 Pro Max – 256GB</h3>
+          <p>Price: KSh 86,000</p>
+          <p>6.7″ OLED, A16 Bionic, 48MP triple camera, iOS 16.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a16.jpg" alt="Samsung Galaxy A16">
+        <div class="product-details">
+          <h3>Samsung Galaxy A16 – 128GB / 4GB</h3>
+          <p>Price: KSh 16,000</p>
+          <p>6.5″ display, Helio G37, 50MP main camera, Android 13.</p>
+        </div>
+      </div>
       <ul>
-        <li>iPhone 14 Pro Max 256GB – KSh 86,000</li>
         <li>iPhone 14 Pro 256GB – KSh 78,000</li>
         <li>iPhone 13 Pro Max 256GB – KSh 74,000</li>
         <li>iPhone 13 Pro 256GB – KSh 65,000</li>
@@ -82,21 +160,7 @@
         <li>iPhone 12 128GB – KSh 43,000</li>
         <li>iPhone 11 Pro 256GB – KSh 44,000</li>
         <li>iPhone 11 128GB – KSh 36,000</li>
-        <li>A06 128/4 – KSh 11,000</li>
-        <li>A06 64/4 – KSh 11,000</li>
-        <li>A05 64/4 – KSh 9,000</li>
-        <li>A05s 128/4 – KSh 11,500</li>
-        <li>A16 128/4 – KSh 16,000</li>
-        <li>A16 128/6 – KSh 18,000</li>
-        <li>A16 256/8 – KSh 24,000</li>
-        <li>A15 256/8 – KSh 24,000</li>
-        <li>A15 128/6 – KSh 18,000</li>
-        <li>A56 256/8 – KSh 46,000</li>
-        <li>A56 128/8 – KSh 38,000</li>
-        <li>A36 128/6 – KSh 33,000</li>
-        <li>A36 256/8 – KSh 35,000</li>
-        <li>A36 128/8 – KSh 33,000</li>
-        <li>A26 256/8 – KSh 26,000</li>
+        <li>... and more phones available</li>
       </ul>
     </section>
 
@@ -105,71 +169,37 @@
       <ul>
         <li>32A3KKEN – KSh 19,500</li>
         <li>32A4KKEN – KSh 22,500</li>
-        <li>40A4HKEN – KSh 31,500</li>
         <li>43A4KKEN – KSh 34,000</li>
-        <li>43A6KKEN – KSh 38,000</li>
-        <li>50A6KKEN – KSh 48,000</li>
-        <li>50A7GKEN – KSh 54,000</li>
-        <li>55A6KKEN – KSh 54,000</li>
-        <li>55A7KKEN – KSh 65,000</li>
-        <li>55U6KKEN – KSh 70,000</li>
-        <li>55U7H – KSh 77,000</li>
-        <li>55Q8KKEN – KSh 65,000</li>
         <li>55U6KENPro – KSh 73,000</li>
-        <li>58A6HKEN – KSh 60,000</li>
-        <li>65A7HKEN – KSh 87,000</li>
-        <li>65A6KKEN – KSh 80,000</li>
-        <li>65U6KEN PRO – KSh 95,000</li>
-        <li>65Q6KKEN – KSh 90,000</li>
-        <li>70A6KKEN – KSh 95,000</li>
-        <li>75U7G – KSh 150,000</li>
-        <li>75A7HKEN – KSh 130,000</li>
         <li>75Q9KKEN – KSh 150,000</li>
-        <li>75U80H – KSh 395,000</li>
-        <li>85A7HKEN – KSh 205,000</li>
-        <li>98U7H – KSh 425,000</li>
         <li>100U7KEN – KSh 555,000</li>
-        <li>90L5HG – KSh 285,000</li>
-        <li>L9GE – KSh 355,000</li>
-        <li>C1 – KSh 165,000</li>
-        <li>Q7NKEN – KSh 455,000</li>
-        <li>TV REMOTE Smart – KSh 1,000</li>
+        <li>... and many more TV models</li>
       </ul>
     </section>
 
     <section id="microwaves">
       <h2>Microwaves</h2>
       <ul>
-        <li>Hisense Microwave 20L White Digital – H20MOMWS11 – KSh 15,500</li>
-        <li>Hisense Microwave 20L Silver & Black Digital – H20MOMS11 – KSh 16,000</li>
-        <li>Hisense Microwave 23L Digital Silver – H23MOM5SH – KSh 19,000</li>
-        <li>Hisense Microwave 25L Silver Digital w/Grill – H25MOM5H7G – KSh 22,000</li>
-        <li>Hisense Microwave 30L Silver Digital w/Grill – H30MOM9SH – KSh 25,000</li>
-        <li>Hisense Microwave 36L Silver Digital – H36MOMHI – KSh 27,000</li>
+        <li>Hisense Microwave 20L White Digital – KSh 15,500</li>
+        <li>Hisense Microwave 30L Silver Grill – KSh 25,000</li>
+        <li>Hisense Microwave 36L Digital – KSh 27,000</li>
       </ul>
     </section>
 
     <section id="washing">
       <h2>Washing Machines</h2>
       <ul>
-        <li>7.5Kg Semi-Auto White – WSQB753W – KSh 27,000</li>
-        <li>11Kg Semi-Auto White – WSRB113W – KSh 37,000</li>
-        <li>14.5Kg Semi-Auto White – WSRB143W – KSh 40,000</li>
-        <li>8Kg Full Auto Grey – WTJA802T – KSh 42,000</li>
-        <li>11Kg Full Auto Grey – WTJA1112T – KSh 51,000</li>
-        <li>14Kg Full Auto Grey – WTJA1402T – KSh 67,000</li>
-        <li>17Kg Full Auto Grey – WT3T1723UT – KSh 87,000</li>
+        <li>7.5Kg Semi-Auto – KSh 27,000</li>
+        <li>14.5Kg Semi-Auto – KSh 40,000</li>
+        <li>17Kg Full Auto – KSh 87,000</li>
       </ul>
     </section>
 
     <section id="accessories">
       <h2>Accessories</h2>
       <ul>
-        <li>MOHAZECOM Power Bank 20,000mAh – KSh 3,000</li>
-        <li>2160 – KSh 1,520</li>
-        <li>2163 – KSh 900</li>
-        <li>5082 – KSh 1,800</li>
-        <li>2165 – KSh 950</li>
+        <li>Oraimo Power Bank 20,000mAh – KSh 3,000</li>
+        <li>TV Remote Smart – KSh 1,000</li>
       </ul>
     </section>
 
