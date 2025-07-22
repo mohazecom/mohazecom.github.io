@@ -1,74 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phones | Mohazecom Ltd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
       color: #333;
     }
     header {
-      background-color: #1d3557;
-      color: white;
+      background: linear-gradient(to right, #1d3557, #457b9d);
+      padding: 1.5rem;
       text-align: center;
-      padding: 1.5rem 1rem;
-    }
-    nav a {
       color: white;
-      margin: 0 1rem;
-      text-decoration: none;
     }
-    nav a:hover {
-      text-decoration: underline;
+    header a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
     }
     .container {
-      max-width: 1200px;
+      padding: 2rem;
+      max-width: 1000px;
       margin: auto;
-      padding: 2rem 1rem;
     }
-    h1, h2 {
-      text-align: center;
+    h2 {
+      color: #1d3557;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    .brand-section {
       margin-bottom: 2rem;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
+    ul {
+      list-style: none;
+      padding-left: 1rem;
     }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s ease;
+    li {
+      padding: 5px 0;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
+    .brand-img {
       width: 100%;
-      height: 180px;
+      max-height: 200px;
       object-fit: cover;
-      border-radius: 5px;
-    }
-    .card h3 {
-      margin: 1rem 0 0.5rem;
-    }
-    .card p {
-      margin: 0;
-    }
-    footer {
-      background: #1d3557;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -78,52 +61,113 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="phones.html">Phones</a>
-      <a href="tvs.html">TVs</a>
-      <a href="accessories.html">Accessories</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">TVs</a>
+      <a href="#">Accessories</a>
     </nav>
   </header>
 
   <div class="container">
-    <h1>All Phone Models</h1>
-
     <h2>iPhones</h2>
-    <div class="grid">
-      <div class="card"><h3>iPhone 14 Pro Max 256GB</h3><p>KSh 86,000</p></div>
-      <div class="card"><h3>iPhone 14 Pro 256GB</h3><p>KSh 78,000</p></div>
-      <div class="card"><h3>iPhone 13 Pro Max 256GB</h3><p>KSh 74,000</p></div>
-      <div class="card"><h3>iPhone 13 Pro 256GB</h3><p>KSh 65,000</p></div>
-      <div class="card"><h3>iPhone 13 256GB</h3><p>KSh 53,000</p></div>
-      <div class="card"><h3>iPhone 13 128GB</h3><p>KSh 48,000</p></div>
-      <div class="card"><h3>iPhone 12 Pro Max 256GB</h3><p>KSh 64,000</p></div>
-      <div class="card"><h3>iPhone 12 Pro 256GB</h3><p>KSh 52,000</p></div>
-      <div class="card"><h3>iPhone 12 128GB</h3><p>KSh 43,000</p></div>
-      <div class="card"><h3>iPhone 11 Pro 256GB</h3><p>KSh 44,000</p></div>
-      <div class="card"><h3>iPhone 11 128GB</h3><p>KSh 36,000</p></div>
-    </div>
+    <ul>
+      <li>iPhone 14 Pro Max 256GB – KSh 86,000</li>
+      <li>iPhone 14 Pro 256GB – KSh 78,000</li>
+      <li>iPhone 13 Pro Max 256GB – KSh 74,000</li>
+      <li>iPhone 13 Pro 256GB – KSh 65,000</li>
+      <li>iPhone 13 256GB – KSh 53,000</li>
+      <li>iPhone 13 128GB – KSh 48,000</li>
+      <li>iPhone 12 Pro Max 256GB – KSh 64,000</li>
+      <li>iPhone 12 Pro 256GB – KSh 52,000</li>
+      <li>iPhone 12 128GB – KSh 43,000</li>
+      <li>iPhone 11 Pro 256GB – KSh 44,000</li>
+      <li>iPhone 11 128GB – KSh 36,000</li>
+    </ul>
 
     <h2>Samsung</h2>
-    <div class="grid">
-      <div class="card"><h3>A06 128/4</h3><p>KSh 11,000</p></div>
-      <div class="card"><h3>A05 64/4</h3><p>KSh 9,000</p></div>
-      <div class="card"><h3>A05s 128/4</h3><p>KSh 11,500</p></div>
-      <div class="card"><h3>A16 128/4</h3><p>KSh 16,000</p></div>
-      <div class="card"><h3>A16 128/6</h3><p>KSh 18,000</p></div>
-      <div class="card"><h3>A16 256/8</h3><p>KSh 24,000</p></div>
-      <div class="card"><h3>A15 256/8</h3><p>KSh 24,000</p></div>
-      <div class="card"><h3>A15 128/6</h3><p>KSh 18,000</p></div>
-      <div class="card"><h3>A56 256/8</h3><p>KSh 46,000</p></div>
-      <div class="card"><h3>A56 128/8</h3><p>KSh 38,000</p></div>
-      <div class="card"><h3>A36 128/6</h3><p>KSh 33,000</p></div>
-      <div class="card"><h3>A36 256/8</h3><p>KSh 35,000</p></div>
-      <div class="card"><h3>A26 256/8</h3><p>KSh 26,000</p></div>
-    </div>
+    <ul>
+      <li>Samsung A06 128/4 – KSh 11,000</li>
+      <li>Samsung A05 64/4 – KSh 9,000</li>
+      <li>Samsung A05s 128/4 – KSh 11,500</li>
+      <li>Samsung A16 128/4 – KSh 16,000</li>
+      <li>Samsung A16 128/6 – KSh 18,000</li>
+      <li>Samsung A16 256/8 – KSh 24,000</li>
+      <li>Samsung A15 256/8 – KSh 24,000</li>
+      <li>Samsung A15 128/6 – KSh 18,000</li>
+      <li>Samsung A56 256/8 – KSh 46,000</li>
+      <li>Samsung A56 128/8 – KSh 38,000</li>
+      <li>Samsung A36 128/6 – KSh 33,000</li>
+      <li>Samsung A36 256/8 – KSh 35,000</li>
+      <li>Samsung A26 256/8 – KSh 26,000</li>
+    </ul>
 
-    <!-- You can continue with Redmi, Tecno, Infinix, Oppo, etc. as needed -->
+    <h2>Redmi</h2>
+    <ul>
+      <li>Note14 Pro Plus 512 – KSh 55,400</li>
+      <li>Note14 Pro Plus 256 – KSh 46,400</li>
+      <li>Note14 Pro 512 – KSh 38,500</li>
+      <li>Note14 Pro 256 – KSh 31,500</li>
+      <li>Note14 256/8 – KSh 24,000</li>
+      <li>Note14 128/6 – KSh 20,500</li>
+      <li>Redmi 13 256/8 – KSh 16,000</li>
+      <li>Redmi 13 128/6 – KSh 14,000</li>
+      <li>Redmi 12 128/8 – KSh 15,800</li>
+      <li>14c 256/8 – KSh 15,500</li>
+      <li>14c 128/6 – KSh 12,700</li>
+      <li>A5red 128/4 – KSh 10,900</li>
+    </ul>
+
+    <h2>Tecno</h2>
+    <ul>
+      <li>Camon 40 Pro 256/8 – KSh 30,700</li>
+      <li>Camon 40 256/8 – KSh 26,200</li>
+      <li>Camon 40 128/8 – KSh 23,200</li>
+      <li>Spark 30 256/8 – KSh 19,100</li>
+      <li>Spark 30 128/8 – KSh 17,000</li>
+      <li>Pop9 128/3 – KSh 11,200</li>
+    </ul>
+
+    <h2>Infinix</h2>
+    <ul>
+      <li>Note 50 Pro 256 – KSh 29,700</li>
+      <li>Note 40 Pro 256/8 – KSh 24,700</li>
+      <li>Hote 50 Pro Plus 256/8 – KSh 24,000</li>
+      <li>Hote 50i 128/6 – KSh 12,200</li>
+      <li>Smart 9 128/4 – KSh 11,200</li>
+    </ul>
+
+    <h2>Itel</h2>
+    <ul>
+      <li>A90 128/4 – KSh 9,700</li>
+      <li>A80 128/4 – KSh 10,700</li>
+      <li>A06 32/2 – KSh 7,900</li>
+      <li>A60s 128/4 – KSh 9,000</li>
+      <li>A50 64/2 – KSh 8,400</li>
+    </ul>
+
+    <h2>Oppo</h2>
+    <ul>
+      <li>Reno 13f 4G – KSh 35,600</li>
+      <li>Reno12f 4G – KSh 42,700</li>
+      <li>A5 Pro 256/8 – KSh 27,500</li>
+      <li>A5 128/6 – KSh 20,700</li>
+      <li>A38 128/6 – KSh 20,900</li>
+    </ul>
+
+    <h2>Vivo</h2>
+    <ul>
+      <li>V50 512/8 – KSh 60,300</li>
+      <li>V50 Lite 5G 256/8 – KSh 43,400</li>
+      <li>Y28 256/8 – KSh 24,300</li>
+      <li>Y19s 128/6 – KSh 19,300</li>
+      <li>Y03 128/4 – KSh 14,000</li>
+    </ul>
+
+    <h2>Villaon</h2>
+    <ul>
+      <li>V40s 64/4 – KSh 8,000</li>
+      <li>V20 32/2 – KSh 6,000</li>
+      <li>V20se 32/2 – KSh 5,150</li>
+      <li>V110 – KSh 900</li>
+    </ul>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Mohazecom Ltd | mohazecomltd@gmail.com | +254 733 563 817</p>
-  </footer>
 </body>
 </html>
