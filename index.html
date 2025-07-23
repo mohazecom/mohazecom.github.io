@@ -2,137 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohazecom Ltd</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: #f4f6f8;
+      color: #333;
     }
-
-    header {
-      background: linear-gradient(to right, #1d3557, #457b9d);
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: #ccc;
-      padding: 60px 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero h1 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .categories {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .categories h2 {
-      font-size: 24px;
-      margin-bottom: 30px;
-      color: #1d3557;
-    }
-
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-
-    .card a {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: #1d3557;
-      text-decoration: none;
-    }
-
-    footer {
+    header, footer {
       background: #1d3557;
       color: white;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: #e0e0e0;
+    }
+    .hero h1 {
+      margin: 0 0 1rem;
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+    .categories {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .categories h2 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 1rem;
+    }
+    .category-box {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .category-box a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .category-box a:hover {
+      text-decoration: underline;
+    }
+    .contact-section {
+      padding: 2rem;
+      background: #fafafa;
+      text-align: center;
+    }
+    .contact-section h2 {
+      color: #1d3557;
+      margin-bottom: 1rem;
+    }
+    .contact-section p {
+      margin: 0.5rem 0;
+    }
+    .contact-section a {
+      color: #1d3557;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>MOHAZECOM LIMITED</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="phones.html">Phones</a>
+      <a href="tvs.html">TVs</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Mohazecom Ltd</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="phones.html">Phones</a>
-    <a href="tvs.html">TVs</a>
-    <a href="accessories.html">Accessories</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1>Best Deals on Electronics in Kenya</h1>
+    <p>Shop smartphones, TVs, accessories and more – fast delivery, great prices.</p>
+  </section>
 
-<section class="hero">
-  <h1>Best Deals on Electronics in Kenya</h1>
-  <p>Shop smartphones, TVs, accessories and more – fast delivery, great prices.</p>
-</section>
-
-<section class="categories">
-  <h2>Our Categories</h2>
-  <div class="card-container">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1603898037225-1f77b36d093d?auto=format&fit=crop&w=600&q=80" alt="Phones">
+  <section class="categories">
+    <h2>Our Categories</h2>
+    <div class="category-box">
       <a href="phones.html">View Phones</a>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1606813902744-3f1ec5cc3703?auto=format&fit=crop&w=600&q=80" alt="TVs">
+    <div class="category-box">
       <a href="tvs.html">View Televisions</a>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1588776814546-2b3c7f381fae?auto=format&fit=crop&w=600&q=80" alt="Accessories">
+    <div class="category-box">
       <a href="accessories.html">View Accessories</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  &copy; 2025 Mohazecom Ltd. All rights reserved.
-</footer>
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/254733563817">+254 733 563 817</a></p>
+    <p><strong>Email:</strong> <a href="mailto:mohazecomltd@gmail.com">mohazecomltd@gmail.com</a></p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Mohazecom Ltd. All rights reserved.</p>
+  </footer>
 </body>
 </html>
