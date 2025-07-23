@@ -3,91 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Order Now - Mohazecom Ltd</title>
+  <title>Place Your Order - Mohazecom</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f7f8;
-      padding: 20px;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
       color: #333;
     }
-
-    .container {
-      max-width: 500px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    header {
+      background-color: #00264d;
+      padding: 15px 0;
+      text-align: center;
+      color: white;
     }
-
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
     h2 {
       text-align: center;
-      color: #2c3e50;
+      margin-bottom: 20px;
     }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input, textarea {
+    form input, form textarea, form select {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
+      padding: 12px;
+      margin: 8px 0;
       border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
     }
-
-    input[type="submit"] {
-      background-color: #1e88e5;
+    form button {
+      width: 100%;
+      background-color: #004080;
       color: white;
+      padding: 14px;
       border: none;
-      margin-top: 20px;
+      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
     }
-
-    input[type="submit"]:hover {
-      background-color: #0d47a1;
+    form button:hover {
+      background-color: #003366;
     }
-
-    .back-link {
-      display: block;
+    footer {
       text-align: center;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #1e88e5;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
+      padding: 15px;
+      background: #00264d;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Place Your Order</h2>
-    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-      <label for="product">Product Name:</label>
-      <input type="text" id="product" name="Product" required>
 
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="Name" required>
+<header>
+  <h1>Mohazecom Ltd</h1>
+</header>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="Phone" required>
+<div class="container">
+  <h2>Place Your Order</h2>
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="Name" required>
 
-      <label for="location">Delivery Location:</label>
-      <input type="text" id="location" name="Location" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="Phone" required>
 
-      <label for="notes">Additional Notes (Optional):</label>
-      <textarea id="notes" name="Notes" rows="3"></textarea>
+    <label for="product">Product Name</label>
+    <input type="text" id="product" name="Product" placeholder="e.g. Samsung A16 128/6" required>
 
-      <input type="submit" value="Submit Order">
-    </form>
+    <label for="location">Delivery Location</label>
+    <input type="text" id="location" name="Location" required>
 
-    <a class="back-link" href="index.html">← Back to Home</a>
-  </div>
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" name="Notes" rows="4" placeholder="Optional"></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 Mohazecom Ltd. All rights reserved.
+</footer>
+
 </body>
 </html>
